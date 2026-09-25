@@ -33,11 +33,34 @@
         </p>
       </header>
 
-      <div class="overflow-hidden rounded-3xl border border-white/10 bg-black shadow-2xl shadow-black/40">
-        <iframe id="video-player" class="aspect-video w-full bg-black" src="about:blank" title="Reproductor de video"
-          allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
-          referrerpolicy="strict-origin-when-cross-origin"></iframe>
-      </div>
+      <div
+  class="
+    w-full
+    bg-black
+    sm:overflow-hidden
+    sm:rounded-3xl
+    sm:border
+    sm:border-white/10
+  "
+>
+  <iframe
+    id="video-player"
+    class="
+      block
+      h-[65dvh]
+      w-full
+      border-0
+      bg-black
+      sm:h-auto
+      sm:aspect-video
+    "
+    src="about:blank"
+    title="Reproductor de video"
+    allow="autoplay; fullscreen; picture-in-picture"
+    allowfullscreen
+    referrerpolicy="strict-origin-when-cross-origin"
+  ></iframe>
+</div>
     </section>
   </main>
 
