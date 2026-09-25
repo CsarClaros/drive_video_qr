@@ -12,6 +12,4 @@ export const CONFIG = {
   GOOGLE_API_KEY: 'AIzaSyB2tdqoVy4e7vp5QpZ9RAYcszMmmMxpW-8',
 
 
-  APP_URL: 'https://proyecto-de-relleno.vercel.app',
-
 };

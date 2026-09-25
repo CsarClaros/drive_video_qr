@@ -3,68 +3,98 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="robots" content="noindex" />
   <title>Reproductor</title>
 
-  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./css/tailwind.css">
   <link rel="stylesheet" href="./css/styles.css" />
 
-  <link
-  rel="icon"
-  href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎬</text></svg>"
-/>
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎬</text></svg>" />
 
 </head>
 
 <body class="video-shell min-h-screen text-white antialiased">
-  <main class="flex min-h-screen items-center justify-center px-4 py-8 sm:px-8">
-    <section class="w-full max-w-6xl">
-      <header class="mb-5 text-center sm:mb-7">
-        <h1 id="player-title" class="text-2xl font-bold tracking-tight text-white sm:text-3xl">
-          Cargando video...
-        </h1>
-        <p id="player-state" class="mt-2 text-sm text-slate-400">
-          Preparando reproductor
-        </p>
-      </header>
 
-      <div
+  <main
   class="
-    w-full
-    bg-black
-    sm:overflow-hidden
-    sm:rounded-3xl
-    sm:border
-    sm:border-white/10
+    flex
+    min-h-screen
+    items-center
+    justify-center
+    px-0
+    py-8
+    sm:px-8
   "
 >
-  <iframe
-    id="video-player"
-    class="
-      block
-      h-[65dvh]
-      w-full
-      border-0
-      bg-black
-      sm:h-auto
-      sm:aspect-video
-    "
-    src="about:blank"
-    title="Reproductor de video"
-    allow="autoplay; fullscreen; picture-in-picture"
-    allowfullscreen
-    referrerpolicy="strict-origin-when-cross-origin"
-  ></iframe>
-</div>
+
+    <section class="w-full max-w-6xl">
+
+      <!-- Información del video -->
+      <header class="mb-5 text-center sm:mb-7">
+
+        <h1
+          id="player-title"
+          class="
+            px-4
+            text-center
+            text-xl
+            font-bold
+            sm:text-3xl
+          "
+        >
+          Cargando video...
+        </h1>
+
+        <p
+          id="player-state"
+          class="
+            mt-2
+            px-4
+            text-center
+            text-sm
+            text-slate-400
+            sm:text-base
+          "
+        >
+          Preparando reproductor...
+        </p>
+
+      </header>
+
+
+      <!-- Reproductor -->
+      <div
+      class="
+        w-full
+        overflow-hidden
+        bg-black
+        sm:rounded-3xl
+        sm:border
+        sm:border-white/10
+      "
+    >
+      <iframe
+        id="video-player"
+        class="drive-video-frame"
+        src="about:blank"
+        title="Reproductor de video"
+        allow="autoplay; fullscreen; picture-in-picture"
+        referrerpolicy="strict-origin-when-cross-origin"
+      ></iframe>
+    </div>
+
     </section>
+
   </main>
 
   <script type="module" src="./js/player.js"></script>
+
 </body>
 
 </html>

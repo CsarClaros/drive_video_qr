@@ -25,3 +25,19 @@ body {
     radial-gradient(circle at top, rgba(99, 102, 241, 0.16), transparent 34%),
     #020617;
 }
+
+
+.drive-video-frame {
+  width: 100%;
+  height: clamp(400px, 65dvh, 520px);
+  display: block;
+  border: 0;
+  background: #000;
+}
+
+@media (min-width: 640px) {
+  .drive-video-frame {
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+}
