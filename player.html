@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <title>Reproductor</title>
+
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/tailwind.css">
+  <link rel="stylesheet" href="./css/styles.css" />
+
+  <link
+  rel="icon"
+  href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎬</text></svg>"
+/>
+
+</head>
+
+<body class="video-shell min-h-screen text-white antialiased">
+  <main class="flex min-h-screen items-center justify-center px-4 py-8 sm:px-8">
+    <section class="w-full max-w-6xl">
+      <header class="mb-5 text-center sm:mb-7">
+        <h1 id="player-title" class="text-2xl font-bold tracking-tight text-white sm:text-3xl">
+          Cargando video...
+        </h1>
+        <p id="player-state" class="mt-2 text-sm text-slate-400">
+          Preparando reproductor
+        </p>
+      </header>
+
+      <div class="overflow-hidden rounded-3xl border border-white/10 bg-black shadow-2xl shadow-black/40">
+        <iframe id="video-player" class="aspect-video w-full bg-black" src="about:blank" title="Reproductor de video"
+          allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+          referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="./js/player.js"></script>
+</body>
+
+</html>
