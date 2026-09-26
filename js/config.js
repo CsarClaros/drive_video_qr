@@ -7,7 +7,7 @@ export const CONFIG = {
   // GOOGLE DRIVE - DATOS DEL VIDEO
   // ------------------------------------------------------------
   DRIVE_FILE_URL:
-    'https://drive.google.com/file/d/1kY0mbynFy1GjMMeplajXXwf7UEohl-U5/view?usp=sharing',
+    'https://drive.google.com/file/d/1CEVTFGWx_tZqYx2HGDWADd3VJjeTzOGG/view?usp=sharing',
 
   GOOGLE_API_KEY: 'AIzaSyB2tdqoVy4e7vp5QpZ9RAYcszMmmMxpW-8',
 
